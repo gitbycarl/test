@@ -43,7 +43,7 @@
 
 .div1{
     display: grid;
-    height: 20vh;
+    height: 20vw;
 }
 
 a{
@@ -194,7 +194,17 @@ body::before{
         
     } */
     }
-
+}
+@media (min-width: 1150px){
+    .bottom_images{
+        width: 345px;
+    }
+    .div1{
+        height: 230px;
+    }
+    .div3{
+        padding-top: 115px;
+    }
 }
 @media (max-width: 1920px) {
     body {
