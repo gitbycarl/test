@@ -1,32 +1,78 @@
 <!DOCTYPE html>
 <html>
-<Head>
+<head>
     <title>DOUDOUGH</title>
     <meta charset="utf-8">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- <h6 style="font-family: 'Noto Sans KR'; font-weight: 400;">홍생수 | 중등시리즈 1</h6> -->
+    <!-- <img src ="1920x600_01.jpg" width ="100%"> -->
+</head>
 
-<!-- <h6 style="font-family: 'Noto Sans KR'; font-weight: 400;">홍생수 | 중등시리즈 1</h6> -->
-<!-- <img src ="1920x600_01.jpg" width ="100%"> -->
-<style>
-    body {
-        background-image: url('1920x600_01.jpg'); /* 배경 이미지 경로 */
-        background-size: auto 600px; /* 이미지가 전체 페이지를 커버하도록 조절 */
-        background-position: top; /* 이미지 중심이 페이지 중심과 일치하도록 조절 */
-        background-repeat: no-repeat; /* 이미지 반복 없음 */
-    }
-    /* 화면의 가로 크기가 1920px 이상일 때 적용할 스타일 */
-    @media (min-width: 1920px) {
-            body {
-                background-size: 100% auto; /* 가로 크기를 100%로 조절하여 전체 화면에 맞춤 */
-            }
-        }
-</style>
-</Head>
+
 <body>
-    <a href="index.html"><img src="doudough.svg" width="100px"></a>
-    <h6>홍생수 | 중등시리즈 1</h6>
-    <a href="1.html"><h1>정수와 유리수</h1></a>
-</body>
+    <!-- top -->
+    <div id="index_top">
+        <div><a href="index.html"><img src="filled/doudough.svg" id = "index_logo"></a></div>
+        <div></div>
+        <div><input type="image" id = index_button_alarm src="filled/alarm.svg" onclick=""></div>
+        <div><input type="image" id = index_button_mypage src="filled/mypage.svg" onclick=""></div>
+        <div><input type="button" id="index_button_login" value="로그인" onclick=""></div>
+    <!-- main text -->
+    </div>
+        <div class = "div1"></div>
+        
+        <div id="grid">
+            <div class="div2"></div>
+            <div>
+                <h1>홍생수 | 중등시리즈 1</h1>
+                <h2><a href="1.html">정수와 유리수</a></h2>
+                <h3>중학수학의 기본이 되는 정수와 유리수의 개념과 원리,<br> 거듭제곱, 절댓값, 소수와 소인수분해의 개념과 활용까지</h3>
+                <!-- button -->
+                <input type="button" id="index_button1" value="지금 바로 재생" onclick="
+            
+                ">
+                <input type="button" id="index_button2" value="자세히 보기" onclick="
+            
+                ">
+            </div>
+        </div>
+        <div class="div3"></div>
+        <div id="grid">
+            <div class="div2"></div>
+            <div id="bottom">
+                <div class="bottom_title"><h1>홍생수 중등 시리즈</h1></div>
+                <div id="bottom_images">
+                    <input type="image" class="bottom_images" src="image/1정수와유리수.jpg">
+                    <input type="image" class="bottom_images" src="image/2일차방정식.jpg">
+                    <input type="image" class="bottom_images" src="image/1정수와유리수.jpg">
+                    <input type="image" class="bottom_images" src="image/1정수와유리수.jpg">
+                    
+                </div>
+            </div>
+        </div>
+        
+</body> 
 </html>
+<!-- 
+/* 홍생수 | 중등시리즈 1 */
+
+position: absolute;
+width: 142px;
+height: 24px;
+left: 242px;
+top: 273px;
+
+font-family: 'Noto Sans CJK KR';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height */
+
+/* text/white */
+color: #FFFFFF; -->
+
+
