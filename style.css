@@ -43,7 +43,7 @@
 
 .div1{
     display: grid;
-    height: 213px;
+    height: 20vh;
 }
 
 a{
@@ -114,7 +114,7 @@ input{
 .div3{
     display: grid;
     width: 100%;
-    padding-top: 115px;
+    padding-top: 10%;
     /* height: 115px; */
 }
 .bottom_title{
@@ -130,7 +130,7 @@ input{
     margin-top: 0;
     margin-right: 20px;
     margin-bottom: 20px;
-    width: 345px;
+    width: 30vw;
     border-radius: 4px;
 }
 
@@ -144,7 +144,7 @@ body {
     margin: 0px;
     
     background-image: url('image/1920x600_01.jpg'); /* 배경 이미지 경로 */
-    background-size: auto 600px; /* 이미지가 전체 페이지를 커버하도록 조절 */
+    background-size: 100% auto; /* 이미지가 전체 페이지를 커버하도록 조절 */
     background-position: absolute; /* 이미지 중심이 페이지 중심과 일치하도록 조절 */
     background-repeat: no-repeat; /* 이미지 반복 없음 */
     position: relative;
@@ -155,7 +155,7 @@ body::before{
     position: absolute;
     top: 0;
     left: 0;
-    width: 200%;
+    width: 100%;
     height: 601px;
     background: linear-gradient(
         to bottom,
@@ -168,7 +168,7 @@ body::before{
     position: absolute;
     top: 600px;
     left: 0;
-    width: 200%;
+    width: 100%;
     height: 601px;
     background: linear-gradient(
         to bottom,
@@ -194,4 +194,18 @@ body::before{
         
     } */
     }
+
 }
+@media (max-width: 1920px) {
+    body {
+        background-size: auto 600px; 
+
+        font-size: auto
+    /* }
+    body::before{
+        height : 100vh;
+        
+    } */
+    }
+}
+
