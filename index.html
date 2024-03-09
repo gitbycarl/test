@@ -28,9 +28,9 @@
         <div id="grid">
             <div class="div2"></div>
             <div>
-                <h1>홍생수 | 중등시리즈 1</h1>
-                <h2><a href="1.html">정수와 유리수</a></h2>
-                <h3>중학수학의 기본이 되는 정수와 유리수의 개념과 원리,<br> 거듭제곱, 절댓값, 소수와 소인수분해의 개념과 활용까지</h3>
+                <h1 id="main-subtitle">홍생수 | 중등시리즈 1</h1>
+                <h2 id="main-title"><a href="1.html">정수와 유리수</a></h2>
+                <h3 id="main-description">중학수학의 기본이 되는 정수와 유리수의 개념과 원리,<br>거듭제곱, 절댓값, 소수와 소인수분해의 개념과 활용까지</h3>
                 <!-- button -->
                 <input type="button" id="index_button1" value="지금 바로 재생" onclick="
             
@@ -46,8 +46,20 @@
             <div id="bottom">
                 <div class="bottom_title"><h1>홍생수 중등 시리즈</h1></div>
                 <div id="bottom_images">
-                    <input type="image" class="bottom_images" src="image/1정수와유리수.jpg">
-                    <input type="image" class="bottom_images" src="image/2일차방정식.jpg">
+                    <!-- thumbnail 1 -->
+                    <input type="image" class="bottom_images" src="image/1정수와유리수.jpg" onclick="
+                    document.querySelector('body').style.backgroundImage ='url(\'image/1920x600_01.jpg\')';
+                    document.getElementById('main-subtitle').textContent ='홍생수 | 중등시리즈 1';
+                    document.getElementById('main-title').textContent ='정수와 유리수';
+                    document.getElementById('main-description').innerHTML ='중학수학의 기본이 되는 정수와 유리수의 개념과 원리,<br> 거듭제곱, 절댓값, 소수와 소인수분해의 개념과 활용까지';
+                    ">
+                    <!-- thumbnail 2 -->
+                    <input type="image" class="bottom_images" src="image/2일차방정식.jpg" onclick="
+                    document.querySelector('body').style.backgroundImage ='url(\'image/1920x600_02.jpg\')';
+                    document.getElementById('main-subtitle').textContent ='홍생수 | 중등시리즈 2';
+                    document.getElementById('main-title').textContent ='일차방정식';
+                    document.getElementById('main-description').innerHTML ='대수학의 기본이 되는 문자의 사용, 일차방정식과 (중 1-1) <br> 지수법칙과 단항식, 다항식의 복잡한 계산까지 (중 2-1)';
+                    ">
 
                     
                 </div>
